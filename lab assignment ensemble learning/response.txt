@@ -1,0 +1,55 @@
+pregnancies has 111 (14.5%) zeros
+blood pressure has 35 (4.6%) zeros
+skin thickness has 227 (29.6%) zeros
+insulin has 374 (48.7%) zeros
+bmi has 11 (1.4%) zeros
+500 samples are negative, only 268 samples are positive
+
+LogisticRegression
+predictions: [0 0 0], targets: [0, 0, 0]
+RandomForestClassifier
+predictions: [1 0 0], targets: [0, 0, 0]
+SVC
+predictions: [0 0 0], targets: [0, 0, 0]
+DecisionTreeClassifier
+predictions: [1 1 0], targets: [0, 0, 0]
+ExtraTreesClassifier
+predictions: [0 0 0], targets: [0, 0, 0]
+hard voting classifier
+predictions: [0 0 0], targets: [0, 0, 0]
+soft voting classifier
+predictions: [0 0 0], targets: [0, 0, 0]
+
+extra tree
+              precision    recall  f1-score   support
+
+           0       0.79      0.81      0.80       151
+           1       0.63      0.60      0.62        80
+
+    accuracy                           0.74       231
+   macro avg       0.71      0.71      0.71       231
+weighted avg       0.74      0.74      0.74       231
+mean accuracy: 0.77
+
+decision tree
+              precision    recall  f1-score   support
+
+           0       0.83      0.75      0.79       151
+           1       0.60      0.70      0.65        80
+
+    accuracy                           0.74       231
+   macro avg       0.71      0.73      0.72       231
+weighted avg       0.75      0.74      0.74       231
+mean accuracy: 0.72
+
+best parameter set:
+{'extra tree__n_estimators': 630, 'extra tree__max_depth': 493}
+best score: 0.785791
+              precision    recall  f1-score   support
+
+           0       0.79      0.81      0.80       151
+           1       0.63      0.60      0.62        80
+
+    accuracy                           0.74       231
+   macro avg       0.71      0.71      0.71       231
+weighted avg       0.74      0.74      0.74       231

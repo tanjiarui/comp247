@@ -1,0 +1,16 @@
+anomaly value in bare column
+8 duplicate rows
+
+size is highly correlated with shape
+long tail on size, shape, margin, epithelial, nucleoli and mitoses
+reduce size and shape with PCA. performance improvement might not be obvious because the current dimensionality is not high enough.
+
+			linear		rbf			poly		sigmoid
+accuracy	0.95		0.95		0.95		0.64
+f1 score	0.94		0.94		0.94		0.56
+
+best parameters set:
+{'svc__C': 1, 'svc__degree': 2, 'svc__gamma': 0.03, 'svc__kernel': 'rbf'}
+best estimator:
+Pipeline(steps=[('imputer', SimpleImputer(strategy='median')), ('scaler', StandardScaler()), ('svc', SVC(C=1, degree=2, gamma=0.03, random_state=48))])
+accuracy 0.95

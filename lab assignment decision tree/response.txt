@@ -1,0 +1,30 @@
+G2 is highly correlated with G3
+G3 is highly correlated with G2
+absences has 244 (37.6%) zeros
+G2 has 7 (1.1%) zeros
+G3 has 15 (2.3%) zeros
+balanced data
+
+accuracy: [0.69230769 0.65384615 0.67307692 0.57692308 0.69230769 0.67307692 0.65384615 0.63461538 0.69230769 0.70588235]
+mean accuracy: 0.664819
+column faliures is the most important feature
+              precision    recall  f1-score   support
+
+           0       0.78      0.59      0.67        66
+           1       0.66      0.83      0.74        64
+
+    accuracy                           0.71       130
+   macro avg       0.72      0.71      0.70       130
+weighted avg       0.72      0.71      0.70       130
+
+best parameter set:
+{'decision tree__min_samples_split': 70, 'decision tree__min_samples_leaf': 10, 'decision tree__max_depth': 7}
+best score: 0.699440
+              precision    recall  f1-score   support
+
+           0       0.71      0.71      0.71        66
+           1       0.70      0.70      0.70        64
+
+    accuracy                           0.71       130
+   macro avg       0.71      0.71      0.71       130
+weighted avg       0.71      0.71      0.71       130
